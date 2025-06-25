@@ -1,0 +1,19 @@
+{
+  "name": "@repo/shared-types",
+  "type": "module",
+  "version": "1.0.0",
+  "private": true,
+  "author": "Melwin Kramer",
+  "devDependencies": {
+    "@repo/typescript-config": "*",
+    "prisma": "6.10.1",
+    "typescript": "latest"
+  },
+  "exports": {
+    "./generated/*": "./generated/*",
+    "./types/*": "./types/*"
+  },
+  "dependencies": {
+    "@prisma/client": "6.10.1"
+  }
+}

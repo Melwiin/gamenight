@@ -1,20 +1,27 @@
 {
-  "name": "apps-frontend",
+  "name": "frontend",
+  "version": "1.0.0",
   "private": true,
   "type": "module",
   "scripts": {
     "build": "react-router build",
     "dev": "react-router dev",
-    "start": "react-router-serve ./build/server/index.js",
+    "start": "PORT=8080 react-router-serve ./build/server/index.js",
     "typecheck": "react-router typegen && tsc"
   },
   "dependencies": {
+    "@catppuccin/daisyui": "^2.1.1",
     "@react-router/node": "^7.5.3",
     "@react-router/serve": "^7.5.3",
+    "@repo/shared-types": "*",
+    "axios": "^1.10.0",
+    "daisyui": "^5.0.43",
+    "framer-motion": "^12.18.1",
     "isbot": "^5.1.27",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
-    "react-router": "^7.5.3"
+    "react-router": "^7.5.3",
+    "socket.io-client": "^4.8.1"
   },
   "devDependencies": {
     "@react-router/dev": "^7.5.3",
